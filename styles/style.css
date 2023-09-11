@@ -234,10 +234,12 @@ nav > .ul-h > li > a:focus {
     font-size: 2rem;
 }
 /* INTRO */
-.intro > p {
+.intro > p,
+.about-bio > p {
     padding: 0.5rem;
 }
-.intro > p:first-of-type {
+.intro > p:first-of-type,
+.about-bio > p:first-of-type {
     font-style: italic;
     font-weight: bold;
 }
@@ -259,7 +261,7 @@ nav > .ul-h > li > a:focus {
     position: relative;
     display: block;
 }
-.socials > .social-link > a > .social-img-container > img {
+.socials > .social-link > a > .img-container > img {
     position: absolute;
     object-fit: cover;
     grid-area: 1 / 1 / span 2 / span 1;
@@ -305,6 +307,24 @@ footer {
 }
 /* LEGAL */
 /* FOOTER */
+
+/* ABOUT PRIMARY */
+#about-me {
+    display: grid;
+    grid-template: 1fr / 2fr 3fr;
+}
+#about-me > .img-container {
+    position: relative;
+    display: block;
+}
+#about-me > .img-container > img {
+    position: absolute;
+    object-fit: cover;
+    justify-self: center;
+    width: 100%;
+    z-index: 1;
+}
+/* ABOUT PRIMARY */
 
 /* ANIMATION */
 @keyframes slide-in-out {
@@ -355,3 +375,4 @@ footer {
         top: 50%;
     }
 }
+/* ANIMATION */
