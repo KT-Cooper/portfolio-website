@@ -253,6 +253,7 @@ nav > .ul-h > li > a:focus {
 .socials > .social-link > a {
     display: grid;
     grid-template-rows: 1fr 2fr;
+    padding-bottom: 0.25rem;
 }
 .socials > .social-link > a > .social-img-container {
     position: relative;
@@ -269,6 +270,11 @@ nav > .ul-h > li > a:focus {
 }
 .socials > .social-link > a > figcaption {
     position: relative;
+}
+.socials > .social-link > a > figcaption > h3 {
+    padding: 0.25rem 0.5rem;
+    background-color: rgb(30, 30, 30);
+    color: white;
 }
 .socials > .social-link > a > figcaption > p {
     max-height: 3.5rem;
