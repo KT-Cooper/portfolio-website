@@ -313,9 +313,11 @@ footer {
     display: grid;
     grid-template: 1fr / 2fr 3fr;
 }
-#about-me > .img-container {
+#about-me > .img-container,
+#about-me > .about-bio {
     position: relative;
     display: block;
+    margin: 3rem 0;
 }
 #about-me > .img-container > img {
     position: absolute;
