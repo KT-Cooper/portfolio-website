@@ -192,7 +192,7 @@ nav > .ul-h > li > a:focus {
     top: -0.25rem;
 }
 .slide-indicator {
-    opacity: 40%;
+    opacity: 60%;
     border-bottom: 0.25rem solid black;
 }
 .slide-indicator:active,
