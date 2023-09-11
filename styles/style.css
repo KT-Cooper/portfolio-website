@@ -211,6 +211,15 @@ nav > .ul-h > li > a:focus {
 /* SLIDE INDICATOR */
 /* SLIDESHOW */
 
+/* LANGUAGES / FRAMEWORKS */
+.language-ribbon {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 1rem;
+}
+/* LANGUAGES / FRAMEWORKS */
+
 /* FOOTER */
 footer {
     position: relative;
