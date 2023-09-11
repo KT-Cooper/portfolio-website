@@ -220,6 +220,46 @@ nav > .ul-h > li > a:focus {
 }
 /* LANGUAGES / FRAMEWORKS */
 
+/* MAIN CONTENT */
+.primary {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+/* SOCIALS*/
+.socials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 0 0.5rem;
+}
+.socials > .social-link > a {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.socials > .social-link > a > .social-img-container {
+    position: relative;
+    display: block;
+}
+.socials > .social-link > a > .social-img-container > img {
+    position: absolute;
+    object-fit: cover;
+    grid-area: 1 / 1 / span 2 / span 1;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.socials > .social-link > a > figcaption {
+    position: relative;
+}
+.socials > .social-link > a > figcaption > p {
+    max-height: 3.5rem;
+    overflow: hidden;
+}
+/* SOCIALS*/
+/* MAIN CONTENT */
+
 /* FOOTER */
 footer {
     position: relative;
