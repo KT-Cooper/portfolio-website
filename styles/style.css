@@ -223,15 +223,32 @@ nav > .ul-h > li > a:focus {
 /* MAIN CONTENT */
 .primary {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template: 4rem 1fr / 5fr 1fr;
+    padding: 0 0.5rem;
 }
+.primary > h3 {
+    grid-area: 1 / 1 / span 1 / span 2;
+    padding: 1rem 2rem;
+    background-color: rgb(125, 125, 125);
+    color: white;
+    font-size: 2rem;
+}
+/* INTRO */
+.intro > p {
+    padding: 0.5rem;
+}
+.intro > p:first-of-type {
+    font-style: italic;
+    font-weight: bold;
+}
+/* INTRO */
+
 /* SOCIALS*/
 .socials {
     position: relative;
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    padding: 0 0.5rem;
 }
 .socials > .social-link > a {
     display: grid;
