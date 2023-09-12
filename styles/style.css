@@ -336,6 +336,7 @@ footer {
 #featured-projects {
     margin: 2rem 10%;
 }
+/* PROJECTS */
 
 /* ANIMATION */
 @keyframes slide-in-out {
@@ -345,13 +346,13 @@ footer {
         opacity: 0;
         font-size: 0.5rem;
     }
-    15% {
+    10% {
         height: 100%;
         width: 100%;
         opacity: 100%;
         font-size: 1rem;
     }
-    85% {
+    90% {
         height: 100%;
         width: 100%;
         opacity: 100%;
@@ -370,12 +371,12 @@ footer {
         right: 50%;
         top: 50%;
     }
-    15% {
+    10% {
         left: 0;
         right: 0;
         top: 0;
     }
-    85% {
+    90% {
         left: 0;
         right: 0;
         top: 0;
