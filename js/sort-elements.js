@@ -52,8 +52,10 @@ function SortDataTitleRev() {
 
 // SORT DATE new -> old
 function comparatorDate(a, b) {
-    if (a.dataset.date < b.dataset.date) return -1;
-    if (a.dataset.date > b.dataset.date) return 1;
+    const aDate = new Date(a.dataset.date);
+    const bDate = new Date(b.dataset.date);
+    if (aDate > bDate) return -1;
+    if (aDate < bDate) return 1;
     return 0;
 }
 // Function to sort Data
@@ -68,8 +70,10 @@ function SortDataDate() {
 
 // SORT DATE old -> new
 function comparatorDateRev(a, b) {
-    if (a.dataset.date > b.dataset.date) return -1;
-    if (a.dataset.date < b.dataset.date) return 1;
+    const aDate = new Date(a.dataset.date);
+    const bDate = new Date(b.dataset.date);
+    if (aDate < bDate) return -1;
+    if (aDate > bDate) return 1;
     return 0;
 }
 // Function to sort Data
