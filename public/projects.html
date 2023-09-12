@@ -4,6 +4,7 @@
 
     <!-- META -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <!-- META -->
@@ -35,6 +36,7 @@
                 <li><a class="current-page" href="#">Projects</a></li>
                 <li><a href="./resume.html">Resume</a></li>
                 <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
             </ul>
         </nav>
         <!-- NAVIGATION -->
@@ -43,7 +45,195 @@
 
     <!-- MAIN CONTENT -->
     <main id="main-content">
+        <!-- FEATURED -->
+        <section class="featured">
+            <h3>Featured Projects</h3>
+            <!-- FEATURED SLIDESHOW -->
+            <article class="slideshow-container" id="featured-projects">
+                <!-- SLIDES-->
+                <figure class="slide">
+                    <a class="project-link" href="#" target="_blank">
+                        <img src="https://placehold.co/600x400" alt="banner-image">
+                        <figcaption>
+                            <h2>Project Name 1</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Est in, minima deserunt odio laboriosam repellat ducimus 
+                                velit quas esse officia atque doloremque, possimus quibusdam 
+                                expedita soluta tenetur voluptate aliquam consectetur!
+                            </p>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="slide">
+                    <a class="project-link" href="#" target="_blank">
+                        <img src="https://placehold.co/600x400" alt="banner-image">
+                        <figcaption>
+                            <h2>Project Name 2</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Est in, minima deserunt odio laboriosam repellat ducimus 
+                                velit quas esse officia atque doloremque, possimus quibusdam 
+                                expedita soluta tenetur voluptate aliquam consectetur!
+                            </p>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="slide">
+                    <a class="project-link" href="#" target="_blank">
+                        <img src="https://placehold.co/600x400" alt="banner-image">
+                        <figcaption>
+                            <h2>Project Name 3</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Est in, minima deserunt odio laboriosam repellat ducimus 
+                                velit quas esse officia atque doloremque, possimus quibusdam 
+                                expedita soluta tenetur voluptate aliquam consectetur!
+                            </p>
+                        </figcaption>
+                    </a>
+                </figure>
+                <!-- SLIDES-->
 
+                <!-- SLIDESHOW NAVIGATION -->
+                <a class="slideshow-prev slideshow-nav" onclick="plusSlides(-1)">
+                    <div class="arrow prev"></div>
+                </a>
+                <a class="slideshow-next slideshow-nav" onclick="plusSlides(1)">
+                    <div class="arrow next"></div>
+                </a>
+                <!-- SLIDESHOW NAVIGATION -->
+
+                <!-- SLIDE INDICATORS -->
+                <div class="slide-indicators-container">
+                    <span class="slide-indicator" onclick="currentSlide(1)"></span>
+                    <span class="slide-indicator" onclick="currentSlide(2)"></span>
+                    <span class="slide-indicator" onclick="currentSlide(3)"></span>
+                </div>
+                <!-- SLIDE INDICATORS -->
+                <script src="./js/slideshow.js"></script>
+                <script src="../js/slideshow.js"></script>
+            </article>
+            <!-- FEATURED SLIDESHOW -->
+        </section>
+        <!-- FEATURED -->
+
+        <!-- PRIMARY -->
+        <section class="primary" id="projects-container">
+            <h3>All Projects</h3>
+            <div class="projects-list-container">
+                <!-- LIST SEARCH / SORT -->
+                <article class="search-sort">
+                    <form action="" method="get" class="search-form">
+                        <label for="project-search">
+                            Search:
+                            <input type="search" name="projectSearch" id="project-search" placeholder="Search...">
+                        </label>
+                        <button type="submit">Search</button>
+                    </form>
+                    <label for="sort-options">
+                        Sort:
+                        <select class="sort-options" id="sort-options">
+                            <option selected disabled>Choose an option</option>
+                            <optgroup label="Sort by Title">
+                                <option value="sort-title-a-z">Title (a-z)</option>
+                                <option value="sort-title-z-a">Title (z-a)</option>
+                            </optgroup>
+                            <optgroup label="Sort by Date">
+                                <option value="sort-date-new-old">Date (new-old)</option>
+                                <option value="sort-date-old-new">Date (old-new)</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </article>
+                <!-- LIST SEARCH / SORT -->
+
+                <!-- PROJECTS LIST -->
+                <ul class="list" id="project-list">
+                    <li class="project" id="project-one" data-title="Aaa" data-date="01-12-2023">
+                        <a href="#" target="_blank">
+                            <img src="https://placehold.co/200x100" alt="placeholder">
+                            <div class="project-info">
+                                <h4>
+                                    <script>
+                                        const projectOne = document.querySelector("#project-one");
+                                        document.write(projectOne.dataset.title);
+                                    </script>
+                                </h4>
+                                <aside>
+                                    Created:
+                                    <script>
+                                        document.write(projectOne.dataset.date);
+                                    </script>
+                                </aside>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Eum, laborum recusandae animi, id, nulla inventore corrupti 
+                                    dolorum doloribus voluptates consequuntur quasi autem 
+                                    temporibus similique aliquam modi at. Culpa, provident 
+                                    eligendi?
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" id="project-two" data-title="Ccc" data-date="02-23-2022">
+                        <a href="#" target="_blank">
+                            <img src="https://placehold.co/200x100" alt="placeholder">
+                            <div class="project-info">
+                                <h4>
+                                    <script>
+                                        const projectTwo = document.querySelector("#project-two");
+                                        document.write(projectTwo.dataset.title);
+                                    </script>
+                                </h4>
+                                <aside>
+                                    Created:
+                                    <script>
+                                        document.write(projectTwo.dataset.date);
+                                    </script>
+                                </aside>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Eum, laborum recusandae animi, id, nulla inventore corrupti 
+                                    dolorum doloribus voluptates consequuntur quasi autem 
+                                    temporibus similique aliquam modi at. Culpa, provident 
+                                    eligendi?
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" id="project-three" data-title="Bbb" data-date="12-07-2022">
+                        <a href="#" target="_blank">
+                            <img src="https://placehold.co/200x100" alt="placeholder">
+                            <div class="project-info">
+                                <h4>
+                                    <script>
+                                        const projectThree = document.querySelector("#project-three");
+                                        document.write(projectThree.dataset.title);
+                                    </script>
+                                </h4>
+                                <aside>
+                                    Created:
+                                    <script>
+                                        document.write(projectThree.dataset.date);
+                                    </script>
+                                </aside>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Eum, laborum recusandae animi, id, nulla inventore corrupti 
+                                    dolorum doloribus voluptates consequuntur quasi autem 
+                                    temporibus similique aliquam modi at. Culpa, provident 
+                                    eligendi?
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- PROJECTS LIST -->
+                <script src="../js/sort-elements.js"></script>
+            </div>
+        </section>
+        <!-- PRIMARY -->
     </main>
     <!-- MAIN CONTENT -->
 
@@ -57,6 +247,7 @@
                 <li><a href="#">Projects</a></li>
                 <li><a href="./resume.html">Resume</a></li>
                 <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
             </ul>
         </section>
         <!-- SITEMAP -->

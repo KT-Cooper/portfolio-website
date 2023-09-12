@@ -3,12 +3,16 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
+  clearTimeout(this.timeoutID);
   showSlides(slideIndex += n-1);
+  this.timeoutID = setTimeout(showSlides, 7500);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
+  clearTimeout(this.timeoutID);
   showSlides(slideIndex = n-1);
+  this.timeoutID = setTimeout(showSlides, 7500);
 }
 
 function showSlides(n) {
@@ -16,7 +20,7 @@ function showSlides(n) {
   let slides = document.getElementsByClassName("slide");
   let dots = document.getElementsByClassName("slide-indicator");
   if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n < 0) {slideIndex = slides.length - 1}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -27,5 +31,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "grid";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 7500);
 }
