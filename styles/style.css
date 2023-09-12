@@ -336,6 +336,24 @@ footer {
 #featured-projects {
     margin: 2rem 10%;
 }
+#projects-container {
+    display: block;
+}
+.projects-list-container{
+    position: relative;
+    padding: 1rem 3rem;
+}
+.search-sort {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#project-list {
+    list-style-type: none;
+    display: grid;
+}
 /* PROJECTS */
 
 /* ANIMATION */
