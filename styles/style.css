@@ -364,20 +364,20 @@ footer {
     display: grid;
 }
 /* PROJECT */
-.project {
+.project > a {
     display: flex;
     margin: 0.5rem 0 ;
     background-color: rgb(120, 120, 120);
 }
-.project > img {
+.project > a > img {
     width: 25%;
     object-fit: cover;
 }
 /* PROJECT INFO */
-.project > .project-info {
+.project > a > .project-info {
     padding-bottom: 0.75rem;
 }
-.project > .project-info > h4 {
+.project > a > .project-info > h4 {
     position: relative;
     display: flex;
     height: 2rem;
@@ -386,12 +386,12 @@ footer {
     background-color: rgba(0,0,0,0.4);
     color: white;
 }
-.project > .project-info > aside {
+.project > a > .project-info > aside {
     margin: 0.5rem;
     font-style: italic;
     color:rgb(70, 70, 70);
 }
-.project > .project-info > p {
+.project > a > .project-info > p {
     margin: 0 0.5rem;
 }
 /* PROJECT INFO */
