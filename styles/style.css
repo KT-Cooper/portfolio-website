@@ -227,7 +227,8 @@ nav > .ul-h > li > a:focus {
     grid-template: 4rem 1fr / 5fr 1fr;
     padding: 0 0.5rem;
 }
-.primary > h3 {
+.primary > h3,
+.featured > h3 {
     grid-area: 1 / 1 / span 1 / span 2;
     padding: 1rem 2rem;
     background-color: rgb(125, 125, 125);
@@ -339,10 +340,12 @@ footer {
 #projects-container {
     display: block;
 }
+/* PROJECTS LIST CONTAINER */
 .projects-list-container{
     position: relative;
     padding: 1rem 3rem;
 }
+/* SEARCH-SORT */
 .search-sort {
     position: relative;
     display: flex;
@@ -350,10 +353,51 @@ footer {
     width: 100%;
     margin-bottom: 1rem;
 }
+.search-sort > form {
+    margin-right: 1rem;
+}
+/* SEARCH SORT */
+
+/* PROJECT LIST */
 #project-list {
     list-style-type: none;
     display: grid;
 }
+/* PROJECT */
+.project {
+    display: flex;
+    margin: 0.5rem 0 ;
+    background-color: rgb(120, 120, 120);
+}
+.project > img {
+    width: 25%;
+    object-fit: cover;
+}
+/* PROJECT INFO */
+.project > .project-info {
+    padding-bottom: 0.75rem;
+}
+.project > .project-info > h4 {
+    position: relative;
+    display: flex;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+.project > .project-info > aside {
+    margin: 0.5rem;
+    font-style: italic;
+    color:rgb(70, 70, 70);
+}
+.project > .project-info > p {
+    margin: 0 0.5rem;
+}
+/* PROJECT INFO */
+/* PROJECT */
+/* PROJECT LIST */
+/* PROJECTS LIST CONTAINER */
 /* PROJECTS */
 
 /* ANIMATION */
