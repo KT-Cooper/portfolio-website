@@ -230,6 +230,7 @@ nav > .ul-h > li > a:focus {
 .primary > h3,
 .featured > h3 {
     grid-area: 1 / 1 / span 1 / span 2;
+    margin: 0 -0.5rem;
     padding: 1rem 2rem;
     background-color: rgb(125, 125, 125);
     color: white;

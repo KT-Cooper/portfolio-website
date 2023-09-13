@@ -5,14 +5,12 @@ showSlides(slideIndex);
 function plusSlides(n) {
   clearTimeout(this.timeoutID);
   showSlides(slideIndex += n-1);
-  this.timeoutID = setTimeout(showSlides, 7500);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
   clearTimeout(this.timeoutID);
   showSlides(slideIndex = n-1);
-  this.timeoutID = setTimeout(showSlides, 7500);
 }
 
 function showSlides(n) {
@@ -31,4 +29,5 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "grid";
   dots[slideIndex-1].className += " active";
+  this.timeoutID = setTimeout(showSlides, 7500);
 }
