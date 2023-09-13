@@ -9,8 +9,10 @@ My careers path has definitly been unconventional, but I see that as a strength.
 In my free time, I can be found listening to the latest extremely niche underground music (whether it's tasteful or not is another question), playing or running tabletop roleplaying games, and hosting or preparing for my weekly cult film double feature. I also pick up some odd tasks here and there, including but not limited to transcribing/translating centuries-old occult literature, developing and procuring props for various LARP events, cooking something experimental in the kitchen, or studying up on this, that, or the other.
 ## About This Site
 This website is an ongoing project to help display my latest personal works. I'm constantly looking to improve it and aim to make it an enjoyable experience to peruse.
-## Latest Update (09-11-2023)
-I added most of the basic elements and functionality to the home, about, and projects pages. Half down, half to go!
+## Latest Update 
+I started working on the resume page and made some minor adjustments to some universal styles and scripts.
 ## Older Updates
+### 09-11-2023
+I added most of the basic elements and functionality to the home, about, and projects pages. Half down, half to go!
 ### 09-10-2023
 I've only just created this website, so pardone the sawdust. She's under construction.
